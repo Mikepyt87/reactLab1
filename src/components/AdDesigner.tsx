@@ -41,6 +41,43 @@ const AdDesigner = () => {
           </button>
         </div>
       </div>
+      <div>
+        <button
+          onClick={() => {
+            setDarkTheme(false);
+          }}
+        >
+          Light
+        </button>
+        <button
+          onClick={() => {
+            setDarkTheme(true);
+          }}
+        >
+          Dark
+        </button>
+      </div>
+      <h3>Font Size</h3>
+      <div>
+        <button
+          onClick={() => {
+            setFontSize((prev) => {
+              return prev + 1;
+            });
+          }}
+        >
+          up
+        </button>
+        <button
+          onClick={() => {
+            setFontSize((prev) => {
+              return prev - 1;
+            });
+          }}
+        >
+          down
+        </button>
+      </div>
     </section>
   );
 };
